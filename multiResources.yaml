@@ -6,7 +6,7 @@ Resources:
       ImageId: ami-0cda377a1b884a1bc
       Tags:
         - Key: "Name"
-          Value: !Join ["-", [my, inst, from, cloudformation]]
+          Value: !Join [ "-" , [ my, inst, from, cloudformation ]]
       SecurityGroups:
         - !Ref VprofileSG
 
@@ -22,4 +22,4 @@ Resources:
       - IpProtocol: tcp
         FromPort: 22
         ToPort: 22
-        CidrIp: 183.83.39.124/32
+        CidrIp: 0.0.0.0/0
